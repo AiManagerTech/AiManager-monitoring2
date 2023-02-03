@@ -8,12 +8,17 @@ const FormAppsIframe = ({ FormAppLink }) => {
     <Fragment>
       <iframe
         id=""
-        allowtransparency="true"
-        allowfullscreen="true"
+        allowTransparency="true"
+        allowFullScreen="true"
         allow="geolocation; microphone; camera"
         src={`https://my.forms.app/form/${FormAppLink}?localData=true`}
         frameborder="0"
-        style="width: 1px; min-width:100%; height:formHeight; border:none;"
+        style={{
+          width: '1px',
+          minWidth: '100%',
+          height: 'formHeight',
+          border: 'none',
+        }}
         className="w-full h-full"
         width="100%"
         height="100%"
