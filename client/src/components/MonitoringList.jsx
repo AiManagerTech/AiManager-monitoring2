@@ -3,7 +3,7 @@ import React, { Fragment, useState, useEffect, useContext } from 'react';
 import { GlobalContext } from '../context/GolbalContext';
 
 // Components
-import GoogleFormIframe from '../components/GoogleFormIframe';
+import FormAppsIframe from '../components/FormAppsIframe';
 
 const MonitoringList = ({ data, brand, subsidiary }) => {
   // Context
@@ -72,11 +72,11 @@ const MonitoringList = ({ data, brand, subsidiary }) => {
         </div>
       )}
 
-      {/* Flow 4: Load Google form Iframe. */}
+      {/* Flow 4: Load form app iframe. */}
       {!showMonitoring && (
         <div className="h-full min-h-full w-full p-2 border border-gray-300 shadow-lg bg-white rounded-2xl">
-          <GoogleFormIframe
-            googleFormLink={selectedMonitoring.monitoring.googleFormLink}
+          <FormAppsIframe
+            FormAppLink={selectedMonitoring.monitoring.FormAppLink}
           />
         </div>
       )}
