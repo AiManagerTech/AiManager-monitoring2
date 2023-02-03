@@ -27,12 +27,12 @@ const Home = () => {
   useEffect(() => {
     try {
       const getData = async () => {
-        const monitoringRef = query(collection(db, 'monitoring'));
+        const monitoringRef = query(collection(db, 'monitoring2'));
         const querySnapshot = await getDocs(monitoringRef);
         var data = [];
         var listOfBrands = [];
         querySnapshot.forEach((monitor) => {
-          // console.log(monitor.id, ' => ', monitor.data());
+          console.log(monitor.id, ' => ', monitor.data());
           data.push(monitor.data());
           listOfBrands.push(monitor.data().brand.name);
         });
