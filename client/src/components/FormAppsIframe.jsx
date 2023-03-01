@@ -11,7 +11,7 @@ const FormAppsIframe = ({ FormAppLink }) => {
         allowTransparency="true"
         allowFullScreen="true"
         allow="geolocation; microphone; camera"
-        src={`https://my.forms.app/form/${FormAppLink}?localData=true`}
+        src={`https://my.forms.app/form/${FormAppLink}`}
         frameborder="0"
         style={{
           width: '1px',
